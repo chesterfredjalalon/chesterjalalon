@@ -131,6 +131,11 @@ i{
   border: 2px solid #ffffff;
 }
 
+.buttons a{
+  text-decoration: none !important;
+}
+
+
 @media (max-width: 767.98px) {
   /* Styles for mobile devices */
   #home, .home-text, .col-md-6, .stats {
