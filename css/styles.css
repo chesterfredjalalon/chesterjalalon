@@ -503,12 +503,28 @@ textarea:focus {
 
 
 @media (max-width: 767.98px) {
-    .contact-info{
-      align-items: center;
-      justify-content: center;
+  .contact-info {
       display: flex;
-    }
+      align-items: center; /* Aligns items vertically in the center */
+      justify-content: flex-start; /* Ensures icons and text start from the left */
+      text-align: left; /* Text aligns to the left */
+      margin-bottom: 15px; /* Adds space between each item */
+      width: fit-content; /* Shrinks the container to the content width */
+  }
+
+  .contact-info i {
+      width: 30px;  /* Sets a consistent width for all icons */
+      text-align: center; /* Centers the icon within its space */
+      margin-left: 90px; 
+  }
+
+  .contact-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center the entire contact info block horizontally */
+  }
 }
+
 
 
 footer{
