@@ -510,6 +510,7 @@ textarea:focus {
       text-align: left; /* Text aligns to the left */
       margin-bottom: 15px; /* Adds space between each item */
       width: fit-content; /* Shrinks the container to the content width */
+      font-size: 12px
   }
 
   .contact-info i {
