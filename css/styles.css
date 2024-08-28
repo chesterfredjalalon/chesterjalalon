@@ -515,7 +515,7 @@ textarea:focus {
   .contact-info i {
       width: 30px;  /* Sets a consistent width for all icons */
       text-align: center; /* Centers the icon within its space */
-      margin-left: 90px; 
+      margin-right: 10px; /* Adds space between the icon and the text */
   }
 
   .contact-container {
@@ -524,6 +524,7 @@ textarea:focus {
       align-items: center; /* Center the entire contact info block horizontally */
   }
 }
+
 
 
 
