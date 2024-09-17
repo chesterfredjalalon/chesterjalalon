@@ -1,18 +1,19 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family:"Mulish";
+  font-family: "Mulish";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
-.shadow-text{
+.shadow-text {
   text-shadow: 2px 1px 2px rgba(24, 0, 0, 0.58);
 }
 
@@ -30,15 +31,15 @@ a,
 .h4,
 .h5,
 .h6 {
-  font-family:"Mulish";
-  font-weight:200;
+  font-family: "Mulish";
+  font-weight: 200;
 }
 
-nav{
-  background-color: #101820FF;
+nav {
+  background-color: #101820ff;
   backdrop-filter: blur(15px);
-  font-size:12px;
-  position:fixed;
+  font-size: 12px;
+  position: fixed;
 }
 
 .dropdown-menu {
@@ -53,7 +54,7 @@ nav{
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color:#101820FF; /* Optional: change background on hover */
+  background-color: #101820ff; /* Optional: change background on hover */
   color: #fcbf49 !important;
 }
 
@@ -61,11 +62,11 @@ nav{
   color: #fcbf49 !important;
 }
 
-i{
-  color:#fcbf49;
+i {
+  color: #fcbf49;
 }
 #home {
-  background-color:#101820FF;
+  background-color: #101820ff;
   min-height: 100vh;
   color: #ffffff;
   display: flex;
@@ -131,14 +132,16 @@ i{
   border: 2px solid #ffffff;
 }
 
-.buttons a{
+.buttons a {
   text-decoration: none !important;
 }
 
-
 @media (max-width: 767.98px) {
   /* Styles for mobile devices */
-  #home, .home-text, .col-md-6, .stats {
+  #home,
+  .home-text,
+  .col-md-6,
+  .stats {
     text-align: center; /* Center the text on mobile */
     font-size: 9px;
   }
@@ -148,18 +151,17 @@ i{
     justify-content: center; /* Center social icons on mobile */
     gap: 10px; /* Space between icons */
   }
-  .greeting-home{
+  .greeting-home {
     font-size: 20px;
   }
-  .button{
+  .button {
     display: flex;
     justify-content: center;
   }
-
 }
 
 #about {
-  background-color: #101820FF;
+  background-color: #101820ff;
   color: #ffffff;
   padding: 60px 0; /* Add padding to ensure content doesn't overlap */
   display: flex;
@@ -181,7 +183,8 @@ i{
   justify-content: center; /* Horizontally align items */
 }
 
-.col-md-4, .col-md-8 {
+.col-md-4,
+.col-md-8 {
   flex: 1;
 }
 
@@ -191,14 +194,17 @@ i{
   height: auto; /* Maintain aspect ratio */
 }
 
-.greeting-about, .about-sub, .desc-about, .about-p {
+.greeting-about,
+.about-sub,
+.desc-about,
+.about-p {
   text-align: justify; /* Center text on mobile */
   margin-bottom: 20px; /* Add space between text elements */
 }
 
 .programs {
   display: flex;
-  align-items:left;
+  align-items: left;
   gap: 10px; /* Space between icons */
   font-size: 1.5rem; /* Adjust size for better visibility */
 }
@@ -211,7 +217,7 @@ i{
     padding: 20px; /* Adjust padding on mobile */
   }
 
-  .desc-about{
+  .desc-about {
     text-align: justify !important;
   }
   .row-about {
@@ -220,7 +226,8 @@ i{
     text-align: center; /* Ensure text in columns is centered */
   }
 
-  .col-md-4, .col-md-8 {
+  .col-md-4,
+  .col-md-8 {
     width: 100%; /* Full width on mobile */
     margin-bottom: 20px; /* Space between sections on mobile */
   }
@@ -229,30 +236,30 @@ i{
     margin-bottom: 20px; /* Space between image and text */
   }
 
-  .greeting-about, .about-sub, .desc-about, .about-p {
+  .greeting-about,
+  .about-sub,
+  .desc-about,
+  .about-p {
     text-align: center; /* Center text on mobile */
   }
 
   .programs {
     font-size: 1.2rem; /* Adjust size for mobile */
     margin-top: 20px; /* Add space above programs */
-    justify-content:center;
+    justify-content: center;
   }
-
-  
 }
 
-#education{
-  background-color: #101820FF;
+#education {
+  background-color: #101820ff;
   color: #ffffff;
   padding: 60px 0; /* Add padding to ensure content doesn't overlap */
   display: flex;
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
   min-height: 100vh; /* Ensure the section takes full height of the viewport */
-  font-size:12px !important;
+  font-size: 12px !important;
 }
-
 
 .timeline-with-icons {
   border-left: 1px solid hsl(0, 0%, 90%);
@@ -285,15 +292,13 @@ i{
 
 @media (max-width: 767.98px) {
   /* Styles for mobile devices */
-  .education-head{
+  .education-head {
     text-align: center; /* Center the text on mobile */
   }
 }
 
-
-
 #internship {
-  background-color: #101820FF;
+  background-color: #101820ff;
   color: #ffffff;
   padding: 60px 0; /* Add padding to ensure content doesn't overlap */
   display: flex;
@@ -330,26 +335,38 @@ i{
 
 .img-container {
   margin-bottom: 20px; /* Space between images */
+  
 }
 
 /* Base transition for scaling */
-.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7 {
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 /* Scale and glow effect on hover */
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover {
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover,
+.img7:hover {
   transform: scale(1.08);
 }
 
-
 @media (max-width: 767.98px) {
-  #internship{
+  #internship {
     flex-direction: column; /* Stack items vertically on mobile */
     text-align: center; /* Center text within #about */
     padding: 20px; /* Adjust padding on mobile */
   }
-  .row-internship{
+  .row-internship {
     width: 100%; /* Full width on mobile */
     display: flex;
     justify-content: center; /* Center images */
@@ -357,9 +374,8 @@ i{
   }
 }
 
-
 #projects {
-  background-color:  #101820FF;
+  background-color: #101820ff;
   color: #ffffff;
   display: flex;
   align-items: center; /* Vertically center content */
@@ -370,11 +386,11 @@ i{
   transition: transform 1.5s ease, opacity 1.5s ease; /* Smooth transition for sliding and fading */
 }
 
-.project-title{
+.project-title {
   text-align: left;
 }
 
-.project-desc{
+.project-desc {
   text-align: justify;
 }
 
@@ -382,19 +398,32 @@ i{
   transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
-
-#certification{
-  background-color:#101820FF;
+#projects2 {
+  background-color: #101820ff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
   display: flex;
-  color:#ffffff;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+  color: white;
+}
+
+.card-projects2 {
+  background-color: #101820ff;
+  box-shadow: 4px 6px 5px 1px rgba(0,0,0,0.4);
+  border-radius:5px;
+}
+
+#certification {
+  background-color: #101820ff;
+  display: flex;
+  color: #ffffff;
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
   padding: 60px 0; /* Add padding to ensure content doesn't overlap */
   min-height: 100vh; /* Ensure the section takes full height of the viewport */
   text-align: center;
 }
-
-
 
 .photo-gallery h2 {
   font-weight: bold;
@@ -422,23 +451,43 @@ i{
 }
 
 /* Base transition for scaling */
-.cert1, .cert2, .cert3, .cert4, .cert5, .cert6, .cert7, .cert8, .cert9, .cert10{
+.cert1,
+.cert2,
+.cert3,
+.cert4,
+.cert5,
+.cert6,
+.cert7,
+.cert8,
+.cert9,
+.cert10,
+.cert11,
+.cert12 {
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* Scale and glow effect on hover */
-.cert1:hover, .cert2:hover, .cert3:hover, .cert4:hover, .cert5:hover, .cert6:hover, .cert7:hover, .cert8:hover, .cert9:hover, .cert10:hover {
+.cert1:hover,
+.cert2:hover,
+.cert3:hover,
+.cert4:hover,
+.cert5:hover,
+.cert6:hover,
+.cert7:hover,
+.cert8:hover,
+.cert9:hover,
+.cert10:hover,
+.cert11:hover,
+.cert12:hover {
   transform: scale(1.08) !important;
 }
-
 
 @media (max-width: 767.98px) {
   .photo-gallery {
     text-align: center;
     padding: 20px;
-    
   }
-  
+
   .cert-photos {
     display: flex;
     flex-wrap: wrap;
@@ -458,7 +507,7 @@ i{
 }
 
 #contact {
-  background-color:#101820FF;
+  background-color: #101820ff;
   display: flex;
   color: #ffffff;
   align-items: center; /* Vertically center content */
@@ -474,69 +523,86 @@ i{
 
 .contact-info {
   display: flex;
+  align-items: center; /* Vertically align icons and text */
   margin-bottom: 1rem;
 }
 
 .contact-info i {
-  margin-right: 1rem;
+  margin-right: 1rem; /* Add space between icon and text */
   font-size: 1.25rem;
+  align-self: flex-start; /* Align icon to the top of the text block */
 }
 
 .contact-info span {
+  display: block;
+  text-align: left; /* Ensure text alignment is left */
   margin: 0;
+  line-height: 1.5; /* Increase line height for better readability */
 }
 
-input, textarea {
+.contact-info-address {
+  margin-left: 1.5rem; /* Add spacing between the icon and the text */
+  margin-top: -2rem; /* Slightly move the address text higher */
+}
+
+
+input,
+textarea {
   background-color: rgba(255, 255, 255, 0) !important;
   backdrop-filter: blur(10px) !important;
   color: white !important; /* Set text color to white */
-  border-color:#F2AA4CFF !important; /* Optional: change the border color */
+  border-color: #f2aa4cff !important; /* Optional: change the border color */
 }
 
 label {
   color: white !important; /* Set label color to white */
 }
 
-input:focus, 
+input:focus,
 textarea:focus {
   color: white !important; /* Ensure text remains white when focused */
-  background-color: rgba(255, 255, 255, 0) !important; /* Optional: slightly change background on focus */
-  border-color: rgba(255, 255, 255, 0) !important; /* Optional: change border color on focus */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: slightly change background on focus */
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: change border color on focus */
   box-shadow: none !important; /* Optional: remove focus shadow */
   border-color: white !important; /* Optional: change the border color */
 }
 
-
 @media (max-width: 767.98px) {
   .contact-info {
-      display: flex;
-      align-items: center; /* Aligns items vertically in the center */
-      justify-content: flex-start; /* Ensures icons and text start from the left */
-      text-align: left; /* Text aligns to the left */
-      margin-bottom: 15px; /* Adds space between each item */
-      width: fit-content; /* Shrinks the container to the content width */
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: flex-start; /* Ensures icons and text start from the left */
+    text-align: left; /* Text aligns to the left */
+    margin-bottom: 15px; /* Adds space between each item */
+    width: fit-content; /* Shrinks the container to the content width */
+    font-size: 12px;
   }
 
   .contact-info i {
-      width: 30px;  /* Sets a consistent width for all icons */
-      text-align: center; /* Centers the icon within its space */
-      margin-right: 10px; /* Adds space between the icon and the text */
+    width: 30px; /* Sets a consistent width for all icons */
+    text-align: center; /* Centers the icon within its space */
+    margin-right: 10px; /* Adds space between the icon and the text */
   }
 
   .contact-container {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center the entire contact info block horizontally */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the entire contact info block horizontally */
   }
 }
 
-
-
-
-footer{
-  background-color:#101820FF;
-  color: #F2AA4CFF;
+footer {
+  background-color: #101820ff;
+  color: #f2aa4cff;
   font-size: 12px;
 }
-
-  
