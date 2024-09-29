@@ -250,6 +250,16 @@ i {
   }
 }
 
+#skills {
+  background-color: #101820ff;
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
 #education {
   background-color: #101820ff;
   color: #ffffff;
