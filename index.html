@@ -896,6 +896,8 @@
           text: 'Your message has been sent successfully.',
           confirmButtonColor: '#F2AA4C'
         });
+
+        document.getElementById('contact-form').reset()
       }, function(error) {
         Swal.fire({
           icon: 'error',
