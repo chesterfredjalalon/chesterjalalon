@@ -16,9 +16,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/x-icon" href="images/icon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />         
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <title>Portfolio</title>
 </head>
 
@@ -139,16 +141,11 @@
         <div class="container overflow-hidden">
           <div class="logos">
             <div class="logos-slide">
-              <img src="https://tmb001.vercel.app/images/partners/logo-pointsmaker.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-buyersforpoints.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-dealandrunner.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-buyformeretail.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-buyinggroup.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-embdeals.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-buygetrewards.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-maxoutdeals.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-mysbuyinggroup.png" />
-              <img src="https://tmb001.vercel.app/images/partners/logo-closeoutnj.png" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
             </div>
           </div>
           <!-- <div class="container">
@@ -912,32 +909,32 @@
 
   <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
   <script>
-    (function() {
-    emailjs.init("03zEKda6Qgc_EE4Yd");
-  })();
+    (function () {
+      emailjs.init("03zEKda6Qgc_EE4Yd");
+    })();
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
 
-    emailjs.sendForm('service_bp3k528', 'template_r00lvrh', this)
-      .then(function() {
-        Swal.fire({
-          icon: 'success',
-          title: 'Message Sent.',
-          text: 'Your message has been sent successfully.',
-          confirmButtonColor: '#F2AA4C'
+      emailjs.sendForm('service_bp3k528', 'template_r00lvrh', this)
+        .then(function () {
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent.',
+            text: 'Your message has been sent successfully.',
+            confirmButtonColor: '#F2AA4C'
+          });
+
+          document.getElementById('contact-form').reset()
+        }, function (error) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Failed to send message.',
+            text: 'There was an issue sending your message. Please try again later.',
+            confirmButtonColor: '#F2AA4C'
+          });
         });
-
-        document.getElementById('contact-form').reset()
-      }, function(error) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Failed to send message.',
-          text: 'There was an issue sending your message. Please try again later.',
-          confirmButtonColor: '#F2AA4C'
-        });
-      });
-  });
+    });
   </script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
