@@ -249,11 +249,6 @@ i {
     justify-content: center;
   }
 
-  .logos{
-    flex-direction: column; /* Stack items vertically on mobile */
-    text-align: center; /* Center text within #about */
-    padding: 20px; /* Adjust padding on mobile */
-  }
 }
 
 #skills {
