@@ -250,15 +250,13 @@ i {
   }
   /* Styles for mobile devices */
   .logos {
-    text-align: center; /* Center the logos */
     padding: 20px; /* Adjust padding for a cleaner layout */
     overflow: hidden; /* Hide overflow content */
   }
 
   .logos-slide img {
-    width: 50px; /* Adjust image width for smaller screens */
-    height: 50px; /* Adjust image height for smaller screens */
-    margin: 0 15px; /* Reduce the margin for better spacing */
+    padding: 20px; /* Adjust padding for a cleaner layout */
+    overflow: hidden; /* Hide overflow content */
   }
 }
 
