@@ -170,7 +170,7 @@ i {
   min-height: 100vh; /* Ensure the section takes full height of the viewport */
 }
 
-.container-about {
+.container-about, .container-skill {
   max-width: 1140px; /* Ensure container width is appropriate */
   width: 100%; /* Full width for responsiveness */
   padding: 0 15px; /* Add padding for responsiveness */
