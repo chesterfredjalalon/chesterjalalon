@@ -248,11 +248,6 @@ i {
     margin-top: 20px; /* Add space above programs */
     justify-content: center;
   }
-  .logos{
-    flex-direction: column; /* Stack items vertically on mobile */
-    text-align: center; /* Center text within #about */
-    padding: 20px; /* Adjust padding on mobile */
-  }
 
 }
 
