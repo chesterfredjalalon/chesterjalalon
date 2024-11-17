@@ -295,11 +295,11 @@ i {
   z-index:2;
 }
 .logos:before{
-  left:1px;
+  left:0px;
   background:linear-gradient(to left, rgba(255,255,255,0), #101820ff);
 }
 .logos:after{
-  right: 1px;;
+  right: 0px;;
   background:linear-gradient(to right, rgba(255,255,255,0), #101820ff);
 }
 
