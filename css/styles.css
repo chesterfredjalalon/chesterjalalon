@@ -248,9 +248,15 @@ i {
     margin-top: 20px; /* Add space above programs */
     justify-content: center;
   }
-  .logos{
+  .logos {
     text-align: center; /* Center text within #about */
     padding: 20px; /* Adjust padding on mobile */
+    overflow: hidden; /* Hide overflow to prevent cutting */
+  }
+
+  .logos-slide img {
+    height: 40px; /* Adjust image height for smaller screens */
+    margin: 0 20px; /* Reduce margin for better spacing */
   }
 
 }
