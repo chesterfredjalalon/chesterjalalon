@@ -248,10 +248,22 @@ i {
     margin-top: 20px; /* Add space above programs */
     justify-content: center;
   }
+  .logos {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ensure any overflow content is hidden */
+  }
+
+  .logos-slide {
+    display: flex; /* Use flexbox for a more responsive layout */
+    justify-content: center; /* Center the logos */
+    flex-wrap: wrap; /* Allow logos to wrap onto the next line */
+  }
 
   .logos-slide img {
-    padding: 20px; /* Adjust padding for a cleaner layout */
-    overflow: hidden; /* Hide overflow content */
+    width: 50px; /* Reduce image size for mobile */
+    height: 50px;
+    margin: 10px; /* Adjust spacing around each image */
   }
 }
 
