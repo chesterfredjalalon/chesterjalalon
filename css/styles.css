@@ -248,11 +248,6 @@ i {
     margin-top: 20px; /* Add space above programs */
     justify-content: center;
   }
-  /* Styles for mobile devices */
-  .logos {
-    padding: 20px; /* Adjust padding for a cleaner layout */
-    overflow: hidden; /* Hide overflow content */
-  }
 
   .logos-slide img {
     padding: 20px; /* Adjust padding for a cleaner layout */
