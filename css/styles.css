@@ -248,17 +248,18 @@ i {
     margin-top: 20px; /* Add space above programs */
     justify-content: center;
   }
+  /* Styles for mobile devices */
   .logos {
-    text-align: center; /* Center text within #about */
-    padding: 20px; /* Adjust padding on mobile */
-    overflow: hidden; /* Hide overflow to prevent cutting */
+    text-align: center; /* Center the logos */
+    padding: 20px; /* Adjust padding for a cleaner layout */
+    overflow: hidden; /* Hide overflow content */
   }
 
   .logos-slide img {
-    height: 40px; /* Adjust image height for smaller screens */
-    margin: 0 20px; /* Reduce margin for better spacing */
+    width: 50px; /* Adjust image width for smaller screens */
+    height: 50px; /* Adjust image height for smaller screens */
+    margin: 0 15px; /* Reduce the margin for better spacing */
   }
-
 }
 
 @keyframes slide{
