@@ -260,6 +260,14 @@ i {
   justify-content: center; /* Horizontally center content */
   min-height: 100vh; /* Ensure the section takes full height of the viewport */
 }
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  #skills {
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center; /* Center text within #about */
+    padding: 20px; /* Adjust padding on mobile */
+  }
+}
 @keyframes slide{
   from{
     transform:translateX(0) ;
