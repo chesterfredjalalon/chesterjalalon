@@ -176,7 +176,7 @@ i {
   padding: 0 15px; /* Add padding for responsiveness */
 }
 
-.row-about, .container-skill {
+.row-about{
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap on small screens */
   align-items: center; /* Vertically align items */
