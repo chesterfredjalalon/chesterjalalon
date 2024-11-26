@@ -363,9 +363,6 @@ i {
   .education-head {
     text-align: center; /* Center the text on mobile */
   }
-  .work-head{
-    text-align: center;
-  }
 }
 
 #internship {
@@ -404,33 +401,6 @@ i {
   text-align: justify;
 }
 
-.img-container {
-  margin-bottom: 20px; /* Space between images */
-  
-}
-
-/* Base transition for scaling */
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7 {
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-/* Scale and glow effect on hover */
-.img1:hover,
-.img2:hover,
-.img3:hover,
-.img4:hover,
-.img5:hover,
-.img6:hover,
-.img7:hover {
-  transform: scale(1.08);
-}
-
 @media (max-width: 767.98px) {
   #internship {
     flex-direction: column; /* Stack items vertically on mobile */
@@ -442,6 +412,9 @@ i {
     display: flex;
     justify-content: center; /* Center images */
     margin-bottom: 20px; /* Space between image blocks */
+  }
+  .work-head{
+    text-align: center;
   }
 }
 
