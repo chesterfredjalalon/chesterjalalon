@@ -363,6 +363,9 @@ i {
   .education-head {
     text-align: center; /* Center the text on mobile */
   }
+  .work-head{
+    text-align: center;
+  }
 }
 
 #internship {
