@@ -625,11 +625,7 @@ textarea {
 label {
   color: white !important; /* Set label color to white */
 }
-.test{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 input:focus,
 textarea:focus {
   color: white !important; /* Ensure text remains white when focused */
