@@ -375,13 +375,13 @@ i {
   min-height: 100vh; /* Ensure the section takes full height of the viewport */
 }
 
-.internship-container {
+.work-container {
   max-width: 1140px; /* Ensure container width is appropriate */
   width: 100%; /* Full width for responsiveness */
   padding: 0 15px; /* Add padding for responsiveness */
 }
 
-.internship-row {
+.work-row {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap on small screens */
   align-items: center; /* Vertically align items */
@@ -392,11 +392,11 @@ i {
   text-align: center; /* Center text */
 }
 
-.internship-head {
+.work-head {
   margin-bottom: 20px; /* Add space below the heading */
 }
 
-.desc-internship {
+.desc-work {
   margin-bottom: 40px; /* Add space below the text */
   text-align: justify;
 }
@@ -434,7 +434,7 @@ i {
     text-align: center; /* Center text within #about */
     padding: 20px; /* Adjust padding on mobile */
   }
-  .row-internship {
+  .row-work {
     width: 100%; /* Full width on mobile */
     display: flex;
     justify-content: center; /* Center images */
