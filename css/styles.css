@@ -401,6 +401,18 @@ i {
   text-align: justify;
 }
 
+.company-logo {
+  width: 40px;  /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  object-fit: contain;
+  display: inline-block;
+}
+
+.work-head {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 767.98px) {
   #internship {
     flex-direction: column; /* Stack items vertically on mobile */
@@ -410,11 +422,10 @@ i {
   .row-work {
     width: 100%; /* Full width on mobile */
     display: flex;
-    justify-content: center; /* Center images */
     margin-bottom: 20px; /* Space between image blocks */
   }
-  .work-head{
-    text-align: center;
+  .works{
+    font-size: 1.7em !important;
   }
 }
 
