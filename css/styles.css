@@ -365,7 +365,7 @@ i {
   }
 }
 
-#internship {
+#work {
   background-color: #101820ff;
   color: #ffffff;
   padding: 60px 0; /* Add padding to ensure content doesn't overlap */
@@ -414,7 +414,7 @@ i {
 }
 
 @media (max-width: 767.98px) {
-  #internship {
+  #work{
     flex-direction: column; /* Stack items vertically on mobile */
     text-align: center; /* Center text within #about */
     padding: 20px; /* Adjust padding on mobile */
