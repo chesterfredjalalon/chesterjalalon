@@ -784,8 +784,13 @@
           <div class="row gy-5 gy-md-0 align-items-md-center">
             <div class="col-xs-12 col-md-7 order-1 order-md-0">
               <div class="copyright text-center text-md-start">
-                &copy; 2024. All Rights Reserved.
+                &copy; <span id="year"></span>. All Rights Reserved.
               </div>
+              <script>
+                // JavaScript to dynamically update the year
+                const currentYear = new Date().getFullYear();
+                document.getElementById('year').textContent = currentYear;
+              </script>
               <div class="credits text-secondary text-center text-md-start mt-2 fs-8">
                 CHESTER FRED JALALON
               </div>
