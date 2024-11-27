@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     links.forEach(link => {
       const linkHref = link.getAttribute("href").substring(1);
       const isActive = linkHref === id || 
-                       (["about", "education", "internship"].includes(id) && linkHref === "navbarDropdown");
+                       (["about", "education", "work"].includes(id) && linkHref === "navbarDropdown");
       link.classList.toggle("active", isActive);
     });
   };
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setActive(currentSection);
 
     // Special handling for the 'About' dropdown
-    if (["about", "education", "internship"].includes(currentSection)) {
+    if (["about", "education", "work"].includes(currentSection)) {
       dropdownToggle.classList.add("active");
     } else {
       dropdownToggle.classList.remove("active");
