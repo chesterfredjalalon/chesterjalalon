@@ -1,0 +1,672 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+.shadow-text {
+  text-shadow: 2px 1px 2px rgba(24, 0, 0, 0.58);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Mulish";
+  font-weight: 200;
+}
+
+nav {
+  background-color: #101820ff;
+  backdrop-filter: blur(15px);
+  font-size: 12px;
+  position: fixed;
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(15px);
+  border: none; /* Optional: remove the border if you want */
+  font-size: 12px !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #101820ff; /* Optional: change background on hover */
+  color: #fcbf49 !important;
+}
+
+.nav-link.active {
+  color: #fcbf49 !important;
+}
+
+i {
+  color: #fcbf49;
+}
+#home {
+  background-color: #101820ff;
+  min-height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  text-align: center; /* Center text */
+  flex-direction: column;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100%;
+}
+
+.home-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-text .badge {
+  background-color: #323232;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats span {
+  position: relative;
+  padding: 0 15px; /* Adds space around each stat */
+  margin: 0 5px; /* Adds gap between stats */
+}
+
+.stats span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -5px; /* Positioning the line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 110%;
+  background-color: #b3b3b3;
+}
+
+.buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+}
+
+.buttons a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  #home,
+  .home-text,
+  .col-md-6,
+  .stats {
+    text-align: center; /* Center the text on mobile */
+    font-size: 9px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center; /* Center social icons on mobile */
+    gap: 10px; /* Space between icons */
+  }
+  .greeting-home {
+    font-size: 20px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#about {
+  background-color: #101820ff;
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.container-about{
+  max-width: 1140px; /* Ensure container width is appropriate */
+  width: 100%; /* Full width for responsiveness */
+  padding: 0 15px; /* Add padding for responsiveness */
+}
+
+.row-about{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally align items */
+} 
+
+.col-md-4,
+.col-md-8 {
+  flex: 1;
+}
+
+.img-grad {
+  width: 100%; /* Ensure the image scales correctly */
+  max-width: 100%; /* Prevent image from overflowing */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.greeting-about,
+.about-sub,
+.desc-about,
+.about-p {
+  text-align: justify; /* Center text on mobile */
+  margin-bottom: 20px; /* Add space between text elements */
+}
+
+.programs {
+  display: flex;
+  align-items: left;
+  gap: 10px; /* Space between icons */
+  font-size: 1.5rem; /* Adjust size for better visibility */
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  #about {
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center; /* Center text within #about */
+    padding: 20px; /* Adjust padding on mobile */
+  }
+
+  .desc-about {
+    text-align: justify !important;
+  }
+  .row-about {
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center; /* Center align columns */
+    text-align: center; /* Ensure text in columns is centered */
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Space between sections on mobile */
+  }
+
+  .img-grad {
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .greeting-about,
+  .about-sub,
+  .desc-about,
+  .about-p {
+    text-align: center; /* Center text on mobile */
+  }
+
+  .programs {
+    font-size: 1.2rem; /* Adjust size for mobile */
+    margin-top: 20px; /* Add space above programs */
+    justify-content: center;
+  }
+  .logos {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ensure any overflow content is hidden */
+  }
+
+  .logos-slide {
+    display: flex; /* Use flexbox for a more responsive layout */
+    justify-content: center; /* Center the logos */
+    flex-wrap: wrap; /* Allow logos to wrap onto the next line */
+  }
+
+  .logos-slide img {
+    width: 50px; /* Reduce image size for mobile */
+    height: 50px;
+    margin: 10px; /* Adjust spacing around each image */
+  }
+}
+
+@keyframes slide{
+  from{
+    transform:translateX(0) ;
+    
+  }
+  to{
+    transform:translateX(-100%) ;
+  
+  }
+}
+.logos{
+  overflow:hidden;
+  padding:60px 0 ;
+  background:#101820ff;
+  white-space:nowrap;
+  position:relative;
+}
+
+.logos:before,
+.logos:after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:250px;
+  height:100%;
+  z-index:2;
+}
+.logos:before{
+  left:0px;
+  background:linear-gradient(to left, rgba(255,255,255,0), #101820ff);
+}
+.logos:after{
+  right: 0px;;
+  background:linear-gradient(to right, rgba(255,255,255,0), #101820ff);
+}
+
+
+.logos:hover .logos-slide{
+  animation-play-state:paused;
+  
+  
+}
+.logos-slide{
+  display:inline-block;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img{
+  height:50px;
+  margin: 0 40px;
+}
+
+#education {
+  background-color: #101820ff;
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+  font-size: 12px !important;
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  .education-head {
+    text-align: center; /* Center the text on mobile */
+  }
+}
+
+#work {
+  background-color: #101820ff;
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.work-container {
+  max-width: 1140px; /* Ensure container width is appropriate */
+  width: 100%; /* Full width for responsiveness */
+  padding: 0 15px; /* Add padding for responsiveness */
+}
+
+.work-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally align items */
+}
+
+.text-center {
+  text-align: center; /* Center text */
+}
+
+.work-head {
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.desc-work {
+  margin-bottom: 40px; /* Add space below the text */
+  text-align: justify;
+}
+
+.company-logo {
+  width: 40px;  /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  object-fit: contain;
+  display: inline-block;
+}
+
+.work-head {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767.98px) {
+  #work{
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center; /* Center text within #about */
+    padding: 20px; /* Adjust padding on mobile */
+  }
+  .row-work {
+    width: 100%; /* Full width on mobile */
+    display: flex;
+    margin-bottom: 20px; /* Space between image blocks */
+  }
+  .works{
+    font-size: 1.7em !important;
+  }
+}
+
+#projects {
+  background-color: #101820ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.carousel-item {
+  transition: transform 1.5s ease, opacity 1.5s ease; /* Smooth transition for sliding and fading */
+}
+
+.project-title {
+  text-align: left;
+}
+
+.project-desc {
+  text-align: justify;
+}
+
+.carousel-item {
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+#projects2 {
+  background-color: #101820ff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+  color: white;
+}
+
+.card-projects2 {
+  background-color: #101820ff;
+  box-shadow: 4px 6px 5px 1px rgba(0,0,0,0.4);
+  border-radius:5px;
+}
+
+#certification {
+  background-color: #101820ff;
+  display: flex;
+  color: #ffffff;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+  text-align: center;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+  padding-bottom: 30px;
+}
+
+/* Base transition for scaling */
+.cert1,
+.cert2,
+.cert3,
+.cert4,
+.cert5,
+.cert6,
+.cert7,
+.cert8,
+.cert9,
+.cert10,
+.cert11,
+.cert12 {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* Scale and glow effect on hover */
+.cert1:hover,
+.cert2:hover,
+.cert3:hover,
+.cert4:hover,
+.cert5:hover,
+.cert6:hover,
+.cert7:hover,
+.cert8:hover,
+.cert9:hover,
+.cert10:hover,
+.cert11:hover,
+.cert12:hover {
+  transform: scale(1.08) !important;
+}
+
+@media (max-width: 767.98px) {
+  .photo-gallery {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cert-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cert-photos .item {
+    flex: 1 1 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .cert-photos .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#contact {
+  background-color: #101820ff;
+  display: flex;
+  color: #ffffff;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.contact-container {
+  max-width: 800px; /* Control the width of the content */
+  text-align: center; /* Center text */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center; /* Vertically align icons and text */
+  margin-bottom: 1rem;
+}
+
+.contact-info i {
+  margin-right: 1rem; /* Add space between icon and text */
+  font-size: 1.25rem;
+  align-self: flex-start; /* Align icon to the top of the text block */
+}
+
+.contact-info span {
+  display: block;
+  text-align: left; /* Ensure text alignment is left */
+  margin: 0;
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+.contact-info-address {
+  margin-left: 1.5rem; /* Add spacing between the icon and the text */
+  margin-top: -2rem; /* Slightly move the address text higher */
+}
+
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0) !important;
+  backdrop-filter: blur(10px) !important;
+  color: white !important; /* Set text color to white */
+  border-color: #f2aa4cff !important; /* Optional: change the border color */
+}
+
+label {
+  color: white !important; /* Set label color to white */
+}
+
+input:focus,
+textarea:focus {
+  color: white !important; /* Ensure text remains white when focused */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: slightly change background on focus */
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: change border color on focus */
+  box-shadow: none !important; /* Optional: remove focus shadow */
+  border-color: white !important; /* Optional: change the border color */
+}
+
+@media (max-width: 767.98px) {
+  .contact-info {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: flex-start; /* Ensures icons and text start from the left */
+    text-align: left; /* Text aligns to the left */
+    margin-bottom: 15px; /* Adds space between each item */
+    width: fit-content; /* Shrinks the container to the content width */
+    font-size: 12px;
+  }
+
+  .contact-info i {
+    width: 30px; /* Sets a consistent width for all icons */
+    text-align: center; /* Centers the icon within its space */
+    margin-right: 10px; /* Adds space between the icon and the text */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the entire contact info block horizontally */
+  }
+}
+
+footer {
+  background-color: #101820ff;
+  color: #f2aa4cff;
+  font-size: 12px;
+}
+
+
+
+/* .logos{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+} */
+
