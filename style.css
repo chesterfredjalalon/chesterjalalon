@@ -54,7 +54,7 @@ nav.hidden {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #101820ff; /* Optional: change background on hover */
+  background-color: #101820ff;
   color: #fcbf49 !important;
 }
 
@@ -66,7 +66,6 @@ i {
   color: #fcbf49;
 }
 
-/* Ensure the social media icons are in a single line */
 .dropdown-menu .social-icons {
   display: flex;
   justify-content: space-between; /* Distribute icons evenly */
