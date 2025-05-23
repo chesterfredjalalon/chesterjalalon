@@ -435,6 +435,13 @@ i {
   background-attachment: fixed;
   background-size: cover;
 }
+.carousel-inner {
+    height: 600px; /* or auto if you dynamically calculate tallest slide */
+    overflow: hidden;
+}
+.carousel-item {
+    height: 100%;
+}
 
 .container {
   width: 100%;
