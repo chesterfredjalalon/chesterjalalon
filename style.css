@@ -1,0 +1,908 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #141414;
+  background-image: radial-gradient(rgba(153, 153, 153, 0.1) 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  margin: 0;
+  padding: 0;
+}
+/* Fading sections effect */
+
+
+nav {
+  font-size: 12px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.1);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  transform: translateY(0);
+}
+
+/* Class added when scrolling down */
+nav.hidden {
+  transform: translateY(-100%);
+}
+
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(15px);
+  border: none; /* Optional: remove the border if you want */
+  font-size: 12px !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #101820ff; /* Optional: change background on hover */
+  color: #fcbf49 !important;
+}
+
+.nav-link.active {
+  color: #fcbf49 !important;
+}
+
+i {
+  color: #fcbf49;
+}
+
+/* Ensure the social media icons are in a single line */
+.dropdown-menu .social-icons {
+  display: flex;
+  justify-content: space-between; /* Distribute icons evenly */
+  align-items: center; /* Center icons vertically */
+  gap: 10px; /* Adjust space between icons */
+  padding: 10px 0; /* Optional: adjust padding for spacing */
+}
+
+/* Optional: Adjust icon size */
+.dropdown-menu .social-icons i {
+  font-size: 16px; /* Change this as needed */
+  color: #fcbf49;
+}
+
+.dropdown-menu .social-icons i:hover {
+  color: white; /* Optional: change hover effect for icons */
+}
+
+/* Hide the social icons in the navbar for small screens and show in dropdown */
+@media (max-width: 991px) {
+  .navbar-nav.social-icons {
+    display: block;
+    text-align: left;
+  }
+  .navbar-nav.social-icons .nav-item {
+    display: inline-block; /* Display icons inline on smaller screens */
+    margin: 5px;
+  }
+}
+
+/*===============================HOME==================================*/
+#home {
+  min-height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  text-align: center; /* Center text */
+  flex-direction: column;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100%;
+}
+
+.home-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-text .badge {
+  background-color: #323232;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats span {
+  position: relative;
+  padding: 0 15px; /* Adds space around each stat */
+  margin: 0 5px; /* Adds gap between stats */
+}
+
+.stats span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -5px; /* Positioning the line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 110%;
+  background-color: #b3b3b3;
+}
+
+.buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+}
+
+.buttons a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  #home,
+  .home-text,
+  .stats {
+    text-align: center; /* Center the text on mobile */
+    font-size: 9px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center; /* Center social icons on mobile */
+    gap: 10px; /* Space between icons */
+  }
+
+  .greeting-home {
+    font-size: 20px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*===============================HOME==================================*/
+
+
+/*===============================ABOUT==================================*/
+#about {
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.container-about{
+  max-width: 1140px; /* Ensure container width is appropriate */
+  width: 100%; /* Full width for responsiveness */
+  padding: 0 15px; /* Add padding for responsiveness */
+}
+
+.row-about{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally align items */
+} 
+
+.col-md-4,
+.col-md-8 {
+  flex: 1;
+}
+
+.img-fade-container {
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto; /* This centers the container horizontally */
+  position: relative; /* Needed for absolute positioning of the fade effect */
+  display: block; /* Changed from default flex to block for img container */
+}
+
+.img-fade-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%; /* Adjust fade height */
+  background: linear-gradient(to bottom, transparent 1%, rgba(20, 20, 20, 5) 100%);
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+
+.greeting-about,
+.about-sub,
+.desc-about,
+.about-p {
+  text-align: justify; /* Center text on mobile */
+  margin-bottom: 20px; /* Add space between text elements */
+}
+
+.programs {
+  display: flex;
+  align-items: left;
+  gap: 10px; /* Space between icons */
+  font-size: 1.5rem; /* Adjust size for better visibility */
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  #about {
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center; /* Center text within #about */
+  }
+
+  .desc-about {
+    text-align: justify !important;
+  }
+  .row-about {
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center; /* Center align columns */
+    text-align: center; /* Ensure text in columns is centered */
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Space between sections on mobile */
+  }
+
+  .img-grad {
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .greeting-about,
+  .about-sub,
+  .desc-about,
+  .about-p {
+    text-align: center; /* Center text on mobile */
+  }
+
+  .programs {
+    font-size: 1.2rem; /* Adjust size for mobile */
+    margin-top: 20px; /* Add space above programs */
+    justify-content: center;
+  }
+  .logos {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ensure any overflow content is hidden */
+  }
+
+  .logos-slide {
+    display: flex; /* Use flexbox for a more responsive layout */
+    justify-content: center; /* Center the logos */
+    flex-wrap: wrap; /* Allow logos to wrap onto the next line */
+  }
+
+  .logos-slide img {
+    width: 50px; /* Reduce image size for mobile */
+    height: 50px;
+    margin: 10px; /* Adjust spacing around each image */
+  }
+}
+
+@keyframes slide{
+  from{
+    transform:translateX(0) ;
+    
+  }
+  to{
+    transform:translateX(-100%) ;
+  
+  }
+}
+.logos{
+  overflow:hidden;
+  padding:60px 0 ;
+  white-space:nowrap;
+  position:relative;
+}
+
+.logos:before,
+.logos:after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:250px;
+  height:100%;
+  z-index:2;
+}
+.logos:before{
+  left: 0px;
+  background:linear-gradient(to left, rgba(255,255,255,0), #141414);
+}
+.logos:after{
+  right: 0px;
+  background:linear-gradient(to right, rgba(255,255,255,0), #141414);
+}
+
+
+.logos:hover .logos-slide{
+  animation-play-state:paused;
+  
+  
+}
+.logos-slide{
+  display:inline-block;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img{
+  height:50px;
+  margin: 0 40px;
+}
+
+@media (max-width: 767.98px) {
+  .logos:before,
+  .logos:after {
+    display: none; /* Completely remove the fade effect */
+    /* Alternatively, you could set the gradient to transparent:
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    */
+  }
+}
+/*===============================ABOUT==================================*/
+
+
+/*===============================EDUCATION==================================*/
+#education {
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for mobile devices */
+  .education-head {
+    text-align: center;
+  }
+}
+/*===============================EDUCATION==================================*/
+
+
+/*===============================PROJECTS==================================*/
+
+#projects {
+  padding: 60px 0;
+  color: white;
+  background-color: #141414;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/bg-project.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* From Uiverse.io by Kagamiie */ 
+.project-info {
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: -50px;
+}
+
+.project-title {
+  color: #fcbf49;
+}
+
+.lighter {
+  font-size: 0.9em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  font-weight: lighter;
+  color: grey;
+}
+
+.card {
+  color: white;
+  width: 300px;
+  max-height: 320px;
+  /* Enhanced Glassmorphism */
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.5s ease-in-out !important;
+  margin: 0 auto; /* This centers the card within the column */
+}
+
+.card:hover {
+  transform: scale(1.08) !important;
+    /* Sophisticated Shadow */
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.36),
+    inset 0 4px 8px 0 rgba(255, 255, 255, 0.1);
+}
+
+.card-img  {
+  position: relative;
+  top: -20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.card-img img {
+  height: 150px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: rgba(25, 25, 25, 0.2) 0px 8px 24px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.more-projects {
+  transition: all 0.3s ease;
+}
+
+/*===============================PROJECTS==================================*/
+
+/*===============================WORK=================================*/
+#work {
+  color: #ffffff;
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.timeline-subtitle li {
+  margin-bottom: 8px; /* Adjust spacing as needed */
+}
+
+.timeline-page:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: -1px;
+  top: 0px;
+  width: 1px;
+  height: 100%;
+  margin: auto;
+  border-right: 2px dashed #dee2e6 !important;
+  z-index: -1;
+}
+
+.timeline-page .timeline-item .date-label-left:after,
+.timeline-page .timeline-item .date-label-left:before,
+.timeline-page .timeline-item .duration-right:after,
+.timeline-page .timeline-item .duration-right:before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-page .timeline-item .date-label-left:after,
+.timeline-page .timeline-item .duration-right:after {
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  background-color: #2a52c3;
+}
+
+.timeline-page .timeline-item .date-label-left:before,
+.timeline-page .timeline-item .duration-right:before {
+  border: 2px dashed #dee2e6;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+}
+
+.timeline-page .timeline-item .date-label-left {
+  float: right;
+  margin-right: 24px;
+  color: white; /* White text for dates */
+}
+
+.timeline-page .timeline-item .date-label-left:after {
+  right: -41px;
+}
+
+.timeline-page .timeline-item .date-label-left:before {
+  right: -50px;
+}
+
+.timeline-page .timeline-item .duration-right {
+  float: left;
+  margin-left: 24px;
+  color: white; /* White text for durations */
+}
+
+.timeline-page .timeline-item .duration-right:after {
+  left: -41px;
+}
+
+.timeline-page .timeline-item .duration-right:before {
+  left: -50px;
+}
+
+.timeline-page .timeline-item .event {
+  transition: all 0.2s ease;
+  color: white; /* White text for event titles/descriptions */
+}
+
+.timeline-page .timeline-item .event .title {
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: white; /* Ensure titles are white */
+}
+
+.timeline-page .timeline-item .event.event-description-right {
+  text-align: left;
+  margin-left: 24px;
+}
+
+.timeline-page .timeline-item .event.event-description-left {
+  text-align: right;
+  margin-right: 24px;
+}
+
+@media (max-width: 575px) {
+  .timeline-page {
+    margin-left: 18px;
+  }
+  .timeline-page:after {
+    margin: 0;
+    z-index: -1;
+  }
+  .timeline-page .timeline-item .duration {
+    float: left !important;
+    margin-left: 30px !important;
+    margin-right: auto !important;
+    text-align: left !important;
+  }
+  .timeline-page .timeline-item .duration:after {
+    left: -31px !important;
+    
+  }
+  .timeline-page .timeline-item .duration:before {
+    left: -40px !important;
+  }
+  .timeline-page .timeline-item .duration .event {
+    text-align: left !important;
+    margin-left: 15px;
+  }
+  .timeline-page .timeline-item .event.event-description-left,
+  .timeline-page .timeline-item .event.event-description-right {
+    text-align: left !important;
+    margin: 0 0 0 30px !important;
+  }
+}
+
+.timeline-page .timeline-item .date-label-left:after {
+  background-color: #f89d36 !important; /* Kept orange for visual markers */
+}
+
+.avatar.avatar-ex-small {
+  height: 36px;
+  width: 36px;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+/*===============================WORK=================================*/
+
+
+
+/*===============================CERTIFICATIONS==================================*/
+#certification {
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+/* Grid layout for certificates */
+.cert-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px; /* Compensate for column padding */
+}
+
+.cert-photos .item {
+  padding: 15px; /* Add consistent padding */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Certificate image styling */
+.cert-photos .item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1.414 / 1; /* Standard A4 ratio (landscape) */
+  border-radius: 8px;
+  background: #fff; /* For PNGs with transparency */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Hover effects */
+.cert-photos .item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .photo-gallery {
+    padding: 20px;
+  }
+  
+  .cert-photos .item {
+    flex: 0 0 50%; /* 2 columns on mobile */
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cert-photos .item {
+    flex: 0 0 25%; /* 4 columns on desktop */
+    max-width: 25%;
+  }
+}
+
+/* Ensure all certificates maintain same height */
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*===============================CERTIFICATIONS==================================*/
+
+
+/*===============================CONTACT==================================*/
+#contact {
+  display: flex;
+  color: #ffffff;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 60px 0; /* Add padding to ensure content doesn't overlap */
+  min-height: 100vh; /* Ensure the section takes full height of the viewport */
+}
+
+.button{
+  float:right;
+}
+
+.contact-container {
+  max-width: 800px; /* Control the width of the content */
+  text-align: center; /* Center text */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center; /* Vertically align icons and text */
+  margin-bottom: 1rem;
+}
+
+.contact-info i {
+  margin-right: 1rem; /* Add space between icon and text */
+  font-size: 1.25rem;
+  align-self: flex-start; /* Align icon to the top of the text block */
+}
+
+.contact-info span {
+  display: block;
+  text-align: left; /* Ensure text alignment is left */
+  margin: 0;
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+.contact-info-address {
+  margin-left: 1.5rem; /* Add spacing between the icon and the text */
+  margin-top: -2rem; /* Slightly move the address text higher */
+}
+
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0) !important;
+  backdrop-filter: blur(10px) !important;
+  color: white !important; /* Set text color to white */
+  border-color: #f2aa4cff !important; /* Optional: change the border color */
+}
+
+label {
+  color: white !important; /* Set label color to white */
+  background-color: transparent !important;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: slightly change background on focus */
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ) !important; /* Optional: change border color on focus */
+  box-shadow: none !important; /* Optional: remove focus shadow */
+  border-color: white !important; /* Optional: change the border color */
+}
+
+@media (max-width: 767.98px) {
+  .contact-info {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: flex-start; /* Ensures icons and text start from the left */
+    text-align: left; /* Text aligns to the left */
+    margin-bottom: 15px; /* Adds space between each item */
+    width: fit-content; /* Shrinks the container to the content width */
+    font-size: 12px;
+  }
+
+  .contact-info i {
+    width: 30px; /* Sets a consistent width for all icons */
+    text-align: center; /* Centers the icon within its space */
+    margin-right: 10px; /* Adds space between the icon and the text */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the entire contact info block horizontally */
+  }
+
+  .name-title, .contact-desc, .contact-position{
+    text-align:center;
+  }
+}
+/*===============================CONTACT==================================*/
+
+
+
+/*===============================FOOTER==================================*/
+footer {
+  color: #f2aa4cff;
+  font-size: 12px;
+}
+/*===============================FOOTER==================================*/
+

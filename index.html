@@ -2,898 +2,921 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="images/icon.png">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
 
-<body oncontextmenu="return false;">
-
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#home" style="font-size:12px;">{<strong
-          style="color:#F2AA4CFF;">C</strong>}<strong>HESTER</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              About
+<body>
+    <div class="bg"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home" style="font-size:12px;">
+                {<strong style="color:#F2AA4CFF;">C</strong>}<strong>HESTER</strong>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#about">About Me</a></li>
-              <li><a class="dropdown-item" href="#education">Education</a></li>
-              <li><a class="dropdown-item" href="#work">Work Experience</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certification">Certifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="https://tinyurl.com/mt3dpc9u" target="_blank"><i
-                class="fab fa-facebook-f"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://tinyurl.com/m5bzaxxp" target="_blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://tinyurl.com/mrxweux3" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <main>
-    <section id="home">
-      <div class="container container-home">
-        <div class="home-text" data-aos="zoom-in" data-aos-duration="2000">
-          <p class="badge">Hi! I'm Chester Fred Jalalon</p>
-          <h1 class="greeting-home fw-bold">Specializing in <span style="color:#F2AA4CFF">UI/UX design</span><br>
-            solutions to elevate <span style="color:#F2AA4CFF">users' experiences</span>.</h1>
-          <p class="desc-home">Join me on a journey to explore my accomplishments, insights, and<br> the fascinating
-            stories that have shaped my journey.</p>
-        </div>
-        <div class="stats" data-aos="zoom-in" data-aos-duration="2000">
-          <span>User - Centric<br> Approach</span>
-          <span>Stunning Interfaces<br> Delivered</span>
-          <span>Develop Intuitive<br> Designs</span>
-        </div>
-
-        <div class="buttons" data-aos="zoom-in" data-aos-duration="2000">
-
-          <button type="button" class="btn btn-light" onclick="location.href='images/Resume.pdf'">Resume</button>
-          <a href="#contact">
-            <button type="button" class="btn btn-outline-light">Contact</button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container container-fluid container-about">
-        <div class="row row-about">
-          <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
-            <img src="images/cam.png" loading="lazy" alt="Chester Fred Jalalon" class="img-fluid mt-5 rounded img-grad">
-          </div>
-          <div class="col-md-8" data-aos="fade-down" data-aos-duration="2000">
-            <h1 class="greeting-about fw-bold">Hello, I'm <span style="color:#F2AA4CFF">Chester Fred Jalalon</span></h1>
-            <h6 class="about-sub">UI/UX Designer • IT Support</h6>
-            <p class="desc-about">A fresh graduate with a Bachelor's degree in Information Technology, I am passionate
-              about the ever-evolving field of technology. Throughout my academic journey, I have cultivated a strong
-              interest in UI/UX design, where I have honed my skills in crafting intuitive, user-friendly, and visually
-              appealing digital experiences. My educational background, combined with hands-on project work, has
-              equipped me with a solid foundation in both the technical and creative aspects of design. I am eager to
-              leverage my knowledge and enthusiasm to contribute to innovative projects that prioritize user
-              satisfaction and accessibility.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-      <section id="about" class="py-3 py-md-5 py-xl-8">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
-              <h6 class="mb-4 display-5 text-center fw-bold" style="color:#F2AA4CFF">Tech Stack and Tools</h6>
-              <p class=" mb-5 text-center">I utilize variety of methods and tools to create user-friendly and
-                responsive web designs.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#about">About Me</a></li>
+                            <li><a class="dropdown-item" href="#education">Education</a></li>
+                            <li><a class="dropdown-item" href="#work">Work Experience</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certification">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- Social media icons placed in a div with class 'social-icons' -->
+                <ul class="navbar-nav social-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tinyurl.com/mt3dpc9u" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tinyurl.com/m5bzaxxp" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tinyurl.com/mrxweux3" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
             </div>
-            <div class="container overflow-hidden">
-              <div class="logos">
-                <div class="logos-slide">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" style="width: 60px; height: 60px;"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style="width: 60px; height: 60px; filter: invert(75%) sepia(20%) saturate(300%) hue-rotate(90deg) brightness(105%) contrast(90%);"/>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" style="width: 60px; height: 60px;"/>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="container container-home">
+
+                <div class="home-text" data-aos="zoom-in" data-aos-duration="2000">
+                    <p class="badge">Hi! I'm Chester Fred Jalalon</p>
+                    <h1 class="greeting-home fw-bold">Specializing in <span style="color:#F2AA4CFF">UI/UX
+                            design</span><br>
+                        solutions to elevate <span style="color:#F2AA4CFF">users' experiences</span>.</h1>
+                    <p class="desc-home">Join me on a journey to explore my accomplishments, insights, and<br> the
+                        fascinating
+                        stories that have shaped my journey.</p>
                 </div>
-              </div>
+                <div class="stats" data-aos="zoom-in" data-aos-duration="2000">
+                    <span>User - Centric<br> Approach</span>
+                    <span>Stunning Interfaces<br> Delivered</span>
+                    <span>Develop Intuitive<br> Designs</span>
+                </div>
+
+                <div class="buttons" data-aos="zoom-in" data-aos-duration="2000">
+
+                    <button type="button" class="btn btn-light"
+                        onclick="location.href='images/Resume.pdf'">Resume</button>
+                    <a href="#contact">
+                        <button type="button" class="btn btn-outline-light">Contact</button>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-    <!-- Section: Timeline -->
-    <section class="py-5" id="education">
-      <div class="container container-fluid work-container">
-        <div class="row work-row mt-5">
-          <div class="col-md-5" data-aos="fade-right" data-aos-duration="2000">
-            <h1 class="education-head fw-bold" style="color:#F2AA4CFF">Educational Background</h1>
-          </div>
-          <div class="col-md-7">
-            <div class="container container-fluid work-container">
-              <div class="row education-row">
-                <!-- Section: Timeline -->
-                <section class="py-5">
-                  <ul class="timeline-with-icons">
-                    <li class="timeline-item mb-5">
-                      <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="images/mu.png" class="img-fluid" alt="">
-                      </span>
-
-                      <div data-aos="fade-left" data-aos-duration="2000">
-                        <h4 class="fw-bold">Bachelor of Science in Information Technology</h4>
-                        <h6 style="color:#F2AA4CFF">Misamis University</h6>
-                        <p class="text-muted">S.Y. 2023 - 2024</p>
-                      </div>
-                    </li>
-
-                    <li class="timeline-item mb-5">
-                      <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="images/mu.png" class="img-fluid" alt="">
-                      </span>
-
-                      <div data-aos="fade-left" data-aos-duration="2000">
-                        <h4 class="fw-bold">Senior High School</h4>
-                        <h5 class="fw-bold">Science, Technology, Engineering, and Mathematics</h5>
-                        <h6 style="color:#F2AA4CFF">Misamis University</h6>
-                        <p class="text-muted">S.Y. 2019 - 2020</p>
-                      </div>
-                    </li>
-
-                    <li class="timeline-item mb-5">
-                      <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="images/mu.png" class="img-fluid" alt="">
-                      </span>
-
-                      <div data-aos="fade-left" data-aos-duration="2000">
-                        <h4 class="fw-bold">Junior High School</h4>
-                        <h6 style="color:#F2AA4CFF">Misamis University</h6>
-                        <p class="text-muted">S.Y. 2017 - 2018</p>
-                      </div>
-                    </li>
-
-                    <li class="timeline-item mb-5">
-                      <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="images/deped.png" class="img-fluid" alt="">
-                      </span>
-
-                      <div data-aos="fade-left" data-aos-duration="2000">
-                        <h4 class="fw-bold">Elementary</h4>
-                        <h6 style="color:#F2AA4CFF">Diplo Elementary School</h6>
-                        <p class="text-muted">S.Y. 2013 - 2014</p>
-                      </div>
-                    </li>
-
-                  </ul>
-                </section>
-                <!-- Section: Timeline -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section: Timeline -->
-    <section id="work">
-      <div class="container">
-        <h6 class="mb-5 display-5 text-center fw-bold" style="color:#F2AA4CFF">Work Experience</h6>
-        <div class="row mt-5">
-          <!-- DepEd Column -->
-          <div class="col-md-6">
-            <div class="timeline-section">
-              <div  class="mb-5 text-start"data-aos="fade-right" data-aos-duration="2000">
-                <h4 class="work-head fw-bold d-flex align-items-center" style="color:#F2AA4CFF">
-                  <img src="images/deped2.png" alt="DepEd Logo" class="company-logo me-3">
-                  DepEd - Division of Ozamiz City
-                </h4>
-                <p class="works">IBJT Compound, Carangan, Ozamiz City <br>February 2024 – May 2024</p>
-              </div>
-              <ul class="timeline-with-icons">
-                <li class="timeline-item mb-5 text-start">
-                  <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000"></span>
-                  <div data-aos="fade-left" data-aos-duration="2000">
-                    <h5 class="fw-bold" style="color:#F2AA4CFF">UI/UX Design Intern</h5>
-                    <p class="works">
-                      • Collaborated with a team to create prototypes for user-friendly interfaces and experiences. <br>
-                      • Conducted user research, including interviews and usability testing. <br>
-                      • Worked with supervisors to ensure designs met project specifications and schedules. <br>
-                      • Contributed to front-end development tasks to help implement design aspects.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="timeline-item mb-5 text-start">
-                  <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000"></span>
-                  <div data-aos="fade-left" data-aos-duration="2000">
-                    <h5 class="fw-bold" style="color:#F2AA4CFF">IT Support Intern</h5>
-                    <p class="works">
-                      • Installing, updating, and troubleshooting software applications. <br>
-                      • Maintaining and securing an administrative website from unauthorized access. <br>
-                      • Keeping track of IT assets such as laptops, projectors, and multimedia tools, ensuring they are well maintained. <br>
-                      • Effectively answering teachers' questions online by providing clear, concise solutions, and support.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- RipeConcepts Column -->
-          <div class="col-md-6">
-            <div class="timeline-section">
-              <div class="mb-5 text-start" data-aos="fade-right" data-aos-duration="2000">
-                <h4 class="work-head fw-bold d-flex align-items-center" style="color:#F2AA4CFF">
-                  <img src="images/ripe.png" alt="RipeConcepts Logo" class="company-logo me-3">
-                  RipeConcepts - Nagarro Company
-                </h4>
-                <p class="works">Ayala Center Cebu, Cebu Business Park, Cebu City <br>October 2024 – December 2024</p>
-              </div>
-              <ul class="timeline-with-icons">
-                <li class="timeline-item mb-5 text-start">
-                  <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000"></span>
-                  <div data-aos="fade-left" data-aos-duration="2000">
-                    <h5 class="fw-bold" style="color:#F2AA4CFF">Design Associate</h5>
-                    <p class="works">
-                      • Creating mock-up designs for clients. <br>
-                      • Collaborated with cross-functional teams to align design work and project goals. <br>
-                      • Utilized tools like Adobe Creative Suite (Photoshop, Illustrator) to produce high-quality designs.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="timeline-item mb-5 text-start">
-                  <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000"></span>
-                  <div data-aos="fade-left" data-aos-duration="2000">
-                    <h5 class="fw-bold" style="color:#F2AA4CFF">Quality Control</h5>
-                    <p class="works">
-                      • Verify that designs meet project requirements, including size, resolution, format, and layout specifications. <br>
-                      • Check for consistency in typography, colors, spacing, and alignment across design components. <br>
-                      • Provide constructive feedback on designs to enhance quality and effectiveness.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container container-fluid mb-3" style="margin-top:-40px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active item1">
-              <section id="project1">
-                <div class="container pt-4 text-center">
-                  <div class="row align-items-center justify-content-center vh-100 ">
-                    <div class="col-md-5" data-aos="fade-right" data-aos-duration="2000">
-                      <h1 class="project-title" style="color:#F2AA4CFF">Canine Care</h1>
-                      <p class="project-desc">This application incorporates vast information on common canine ailments,
-                        delving into their signs and symptoms. The application also offers practical home remedies and
-                        first-aid recommendations, giving dog owners a comprehensive approach to treating common canine
-                        illnesses exhibited by their dog. </p>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="text-center">Front-end</p>
-                          <i class="hgi-stroke hgi-html-5" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-bootstrap" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
+        <section id="about">
+            <div class="container container-fluid container-about">
+                <div class="row row-about">
+                    <div class="col-md-5" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="img-fade-container"> <!-- New wrapper div -->
+                            <img src="images/cam.png" loading="lazy" alt="Chester Fred Jalalon"
+                                class="img-fluid mt-5 rounded">
                         </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Back-end</p>
-                          <i class="hgi-stroke hgi-api" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-php" style="font-size:25px"></i>
+                    </div>
+                    <div class="col-md-7" data-aos="fade-down" data-aos-duration="2000">
+                        <h2 class="greeting-about fw-bold">Hello, I'm <span style="color:#F2AA4CFF">Chester Fred
+                                Jalalon</span></h2>
+                        <h6 class="about-sub">UI/UX Designer • IT Support</h6>
+                        <p class="desc-about">Over time, I have developed a keen interest in UI/UX design, where I have
+                            honed my skills in crafting intuitive, user-friendly, and visually appealing digital
+                            experiences. In addition to design, I also provide IT support, applying my technical
+                            expertise to troubleshoot and resolve a wide range of technology-related issues. My
+                            educational background, combined with hands-on project experience, has equipped me with a
+                            solid foundation in both the technical and creative aspects of design and support. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+                        <h2 class="mb-4 text-center fw-bold" style="color:#F2AA4CFF">Tech Stack and Tools</h2>
+                        <p class=" mb-5 text-center">I utilize variety of methods and tools to create user-friendly and
+                            responsive web designs.</p>
+                    </div>
+                    <div class="container overflow-hidden">
+                        <div class="logos">
+                            <div class="logos-slide">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                    style="width: 60px; height: 60px; filter: invert(75%) sepia(20%) saturate(300%) hue-rotate(90deg) brightness(105%) contrast(90%);" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                                    style="width: 60px; height: 60px;" />
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Prototyping</p>
-                          <i class="hgi-stroke hgi-adobe-photoshop" style="font-size:25px"></i>
-                          <i <i class="hgi-stroke hgi-figma" style="font-size:25px"></i>
-                        </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container container-fluid">
+                <div class="row work-row">
+                    <div class="col-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start education-head"
+                        data-aos="fade-right" data-aos-duration="2000">
+                        <h2 class="fw-bold" style="color:#F2AA4CFF">Educational Background</h2>
                     </div>
                     <div class="col-md-7">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-6 mb-5 mb-lg-0">
-                            <img src="images/gif1.gif" data-aos="fade-up" data-aos-duration="2000"
-                              class="img-fluid shadow-1-strong rounded mb-4 gif1" alt="GIF1" loading="lazy">
-                          </div>
-                          <div class="col-lg-6 mb-5 mb-lg-0">
-                            <img src="images/gif2.gif" data-aos="fade-down" data-aos-duration="2000"
-                              class="img-fluid shadow-1-strong rounded mb-4 gif2" alt="GIF2" loading="lazy">
-                          </div>
+                        <div class="container container-fluid justify-content-center">
+                            <div class="row education-row">
+                                <!-- Section: Timeline -->
+                                <section class="py-5 align-items-center">
+                                    <ul class="timeline-with-icons">
+                                        <li class="timeline-item mb-5">
+                                            <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
+                                                <img src="images/mu.png" class="img-fluid" alt="">
+                                            </span>
+
+                                            <div data-aos="fade-left" data-aos-duration="2000">
+                                                <h5 class="fw-bold">Bachelor of Science in Information Technology</h5>
+                                                <h6 style="color:#F2AA4CFF">Misamis University</h6>
+                                                <p>S.Y. 2023 - 2024</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-item mb-5">
+                                            <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
+                                                <img src="images/mu.png" class="img-fluid" alt="">
+                                            </span>
+
+                                            <div data-aos="fade-left" data-aos-duration="2000">
+                                                <h5 class="fw-bold">Senior High School</h5>
+                                                <h6 class="fw-bold">Science, Technology, Engineering, and Mathematics
+                                                </h6>
+                                                <h6 style="color:#F2AA4CFF">Misamis University</h6>
+                                                <p>S.Y. 2019 - 2020</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-item mb-5">
+                                            <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
+                                                <img src="images/mu.png" class="img-fluid" alt="">
+                                            </span>
+
+                                            <div data-aos="fade-left" data-aos-duration="2000">
+                                                <h5 class="fw-bold">Junior High School</h5>
+                                                <h6 style="color:#F2AA4CFF">Misamis University</h6>
+                                                <p>S.Y. 2017 - 2018</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-item mb-5">
+                                            <span class="timeline-icon" data-aos="fade-up" data-aos-duration="3000">
+                                                <img src="images/deped.png" class="img-fluid" alt="">
+                                            </span>
+
+                                            <div data-aos="fade-left" data-aos-duration="2000">
+                                                <h5 class="fw-bold">Elementary</h5>
+                                                <h6 style="color:#F2AA4CFF">Diplo Elementary School</h6>
+                                                <p>S.Y. 2013 - 2014</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </section>
+                                <!-- Section: Timeline -->
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-              </section>
+                </div>
             </div>
-            <div class="carousel-item item2">
-              <section id="project2">
-                <div id="project2" class="container pt-4 text-center">
-                  <div class="row align-items-center justify-content-center vh-100 ">
-                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-                      <h2 class="project-title" style="color:#F2AA4CFF">Computer Laboratory Management System</h2>
-                      <p class="project-desc">This system offers a comprehensive solution designed to manage the
-                        operations of computer laboratories, particularly focusing on the efficient storage, tracking,
-                        and
-                        updating of computer laboratory equipment. </p>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="text-center">Front-end</p>
-                          <i class="hgi-stroke hgi-html-5" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-bootstrap" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
+        </section>
+
+        <section id="work">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="section-title mb-2 pb-2">
+                            <div class="position-relative">
+                                <h2 class="fw-bold" style="color:#F2AA4CFF">Work Experience</h2>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Back-end</p>
-                          <i class="hgi-stroke hgi-api" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-php" style="font-size:25px"></i>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row mt-5">
+                    <div class="col-12 mt-4 pt-2" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="timeline-page position-relative">
+                            <div class="timeline-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="duration date-label-left position-relative text-md-end">
+                                            <img src="images/priume.png" alt="Company Logo"
+                                                style="height: 48px; width: 48px; object-fit: contain;">
+                                            <h5 class="my-2">Priume</h5>
+                                            <small class="mb-0">Janary 2025 - Present</small>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                                        <div class="event event-description-right float-left text-start">
+                                            <h5 class="title mb-1 text-capitalize" style="color:#F2AA4CFF">UX / UI
+                                                Designer</h5>
+                                            <small class="timeline-subtitle mt-3 mb-0">
+                                                I design user interfaces for web and mobile applications, improve user
+                                                experience through feedback and testing, maintain design consistency
+                                                while following brand guidelines, collaborate with stakeholders to meet
+                                                design requirements, and use Jira to track design tasks, collaborate on
+                                                projects, and stay aligned with the development team.
+                                            </small>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end timeline item-->
+
+                            <div class="timeline-item mt-5 pt-4" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2 mt-4 mt-sm-0">
+                                        <div class="event event-description-left float-left text-end">
+                                            <h5 class="title mb-1 text-capitalize" style="color:#F2AA4CFF">Design
+                                                Associate | Quality Control</h5>
+                                            <small class="timeline-subtitle mt-3 mb-0">
+                                                I create mock-up designs for clients and collaborate with
+                                                cross-functional teams to align design work with project goals. Using
+                                                tools like Adobe Creative Suite (Photoshop, Illustrator), I produce
+                                                high-quality designs while ensuring they meet project requirements,
+                                                including size, resolution, format, and layout specifications.
+                                                Additionally, I provide constructive feedback on designs to enhance
+                                                their quality and effectiveness.
+                                            </small>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
+                                        <div class="duration duration-right position-relative">
+                                            <img src="images/ripe.png" alt="Company Logo"
+                                                style="height: 48px; width: 48px; object-fit: contain;">
+                                            <h5 class="my-2">RipeConcenpts Inc.</h5>
+                                            <small class="mb-0">October 2024 - December 2024</small>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end timeline item-->
+
+                            <div class="timeline-item mt-5 pt-4" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                                        <div class="duration date-label-left position-relative text-md-end">
+                                            <img src="images/deped2.png" alt="Company Logo"
+                                                style="height: 48px; width: 48px; object-fit: contain;">
+                                            <h5 class="my-2">DepEd - Division of Ozamiz City</h5>
+                                            <small class="mb-0">Internship</small><br>
+                                            <small class="mb-0">February 2024 - May 2024</small>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                                        <div class="event event-description-right float-left text-start">
+                                            <h5 class="title mb-1 text-capitalize" style="color:#F2AA4CFF">UX / UI
+                                                Designer | IT Support</h5>
+                                            <smal class="timeline-subtitle mt-3 mb-0">
+                                                I collaborated with a team to create prototypes for user-friendly
+                                                interfaces and experiences while contributing to front-end development
+                                                tasks to implement design aspects. Additionally, I handled installing,
+                                                updating, and troubleshooting software applications, maintained and
+                                                secured an administrative website from unauthorized access, and managed
+                                                IT assets such as laptops, projectors, and multimedia tools to ensure
+                                                they were properly maintained.
+                                            </smal>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end timeline item-->
+                        </div><!--end timeline page-->
+                        <!-- TIMELINE END -->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container container-fluid mb-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active item1">
+                            <section id="project1">
+                                <div class="container py-5">
+                                    <div class="row align-items-center">
+                                        <!-- Text Column -->
+                                        <div class="col-lg-5 col-md-6 col-12 mb-4" data-aos="fade-right"
+                                            data-aos-duration="2000">
+                                            <h1 class="project-title" style="color:#F2AA4CFF">Jobhippo</h1>
+                                                <p class="project-desc">JobHippo is a field service management software
+                                                designed to streamline various aspects of field service businesses,
+                                                including quoting, invoicing, and scheduling. It offers tools for
+                                                managing teams, tracking jobs, and communicating with customers. </p>
+                                            <small><i class="fa-solid fa-link"></i> jobhippo.com.au</small>
+                                        </div>
+                                        <!-- GIF content -->
+                                        <div class="col-lg-7 col-md-12 mb-3"> <!-- Added mb-5 here -->
+                                            <div class="row">
+                                                <div class="col-12 mb-3">
+                                                    <img src="images/jobhippo.gif" data-aos="fade-down"
+                                                        data-aos-duration="2000"
+                                                        class="img-fluid shadow-1-strong rounded w-100" alt="GIF1"
+                                                        loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Prototyping</p>
-                          <i class="hgi-stroke hgi-figma" style="font-size:25px"></i>
+
+                        <div class="carousel-item item2">
+                            <section id="project2">
+                                <div class="container py-5">
+                                    <div class="row align-items-center">
+                                        <!-- Text Column -->
+                                        <div class="col-lg-5 col-md-6 col-12 mb-4" data-aos="fade-right"
+                                            data-aos-duration="2000">
+                                            <h1 class="project-title" style="color:#F2AA4CFF">Hiring Resource Management System</h1>
+                                                <p class="project-desc">This system offers comprehensive digital platform
+                                                designed to streamline and enhance the management of human resources
+                                                within the division. It facilitates efficient handling of personnel
+                                                records, recruitment processes, professional development planning, and
+                                                performance evaluations for both teaching and non-teaching staff.</p>
+                                        </div>
+                                        <!-- GIF content -->
+                                        <div class="col-lg-7 col-md-12 mb-3"> <!-- Added mb-5 here -->
+                                            <div class="row">
+                                                <div class="col-12 mb-3">
+                                                    <img src="images/deped.gif" data-aos="fade-down"
+                                                        data-aos-duration="2000"
+                                                        class="img-fluid shadow-1-strong rounded w-100" alt="GIF1"
+                                                        loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                      </div>
+
+                        <div class="carousel-item item3">
+                            <section id="project3">
+                                <div class="container py-5">
+                                    <div class="row align-items-center">
+                                        <!-- Text Column -->
+                                        <div class="col-lg-5 col-md-6 col-12 mb-4" data-aos="fade-right"
+                                            data-aos-duration="2000">
+                                            <h1 class="project-title" style="color:#F2AA4CFF">Canine Care</h1>
+                                            <p class="project-desc">
+                                                This application incorporates vast information on common canine
+                                                ailments,
+                                                delving into their signs and symptoms. The application also offers
+                                                practical
+                                                home remedies and first-aid recommendations, giving dog owners a
+                                                comprehensive
+                                                approach to treating common canine illnesses exhibited by their dog.
+                                            </p>
+                                        </div>
+                                        <!-- GIF content -->
+                                        <div class="col-lg-7 col-md-12 mb-3"> <!-- Added mb-5 here -->
+                                            <div class="row">
+                                                <div class="col-6 mb-3">
+                                                    <img src="images/gif1.gif" data-aos="fade-up"
+                                                        data-aos-duration="2000"
+                                                        class="img-fluid shadow-1-strong rounded w-100" alt="GIF1"
+                                                        loading="lazy">
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <img src="images/gif2.gif" data-aos="fade-down"
+                                                        data-aos-duration="2000"
+                                                        class="img-fluid shadow-1-strong rounded w-100" alt="GIF2"
+                                                        loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-5" id="projects-container">
+                    <!-- Project 1 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project1.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/6bU7YqFvDjDopwyV9GqAMu?node-id=0-1&t=thrmcc1epzRVzwHn-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Budget Management App</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">This intuitive UI design showcase expense tracking, savings goals,
+                                    and financial management.</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-8">
-                      <div class="container">
-                        <div class="row">
-                          <img src="images/gif3.gif" data-aos="fade-down" data-aos-duration="2000"
-                            class="img-fluid rounded " alt="GIF2" loading="lazy">
+                    <!-- Project 2 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project2.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/7kUj5eAcro18x54JPOwoXn?node-id=0-1&t=8jlXIingSKNWNCO1-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Task Management App</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">This intuitive UI design showcase organizing tasks, setting
+                                    priorities, and boosting productivity.</span>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-              </section>
-            </div>
-            <div class="carousel-item item3">
-              <section id="project3">
-                <div id="project2" class="container pt-4 text-center">
-                  <div class="row align-items-center justify-content-center vh-100 ">
-                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-                      <h2 class="project-title" style="color:#F2AA4CFF">Attendance System Mobile Application Prototype
-                      </h2>
-                      <p class="project-desc">This UI interface is designed to streamline and simplify the process of
-                        recording, tracking, and managing student attendance. This UI interface aims to demonstrate the
-                        core functionalities and user experience, ensuring a seamless and efficient attendance
-                        management system.</p>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="text-center">Prototyping</p>
-                          <i class="hgi-stroke hgi-figma" style="font-size:25px"></i>
-                        </div>
-                      </div>
                     </div>
 
-                    <div class="col-lg-8">
-                      <div class="container">
-                        <div class="row">
-                          <img src="images/gif4.gif" data-aos="fade-down" data-aos-duration="2000"
-                            class="img-fluid rounded " alt="GIF2" loading="lazy">
+                    <!-- Project 2 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project3.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/s50H9dglaaOWyesQh2TWxN?node-id=0-1&t=8jlXIingSKNWNCO1-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Music App</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">An intuitive Music app UI design for listening music, discovering,
+                                    and organizing various playlists.</span>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-              </section>
-            </div>
-            <div class="carousel-item item4">
-              <section id="project4">
-                <div id="project2" class="container pt-4 text-center">
-                  <div class="row align-items-center justify-content-center vh-100 ">
-                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-                      <h2 class="project-title" style="color:#F2AA4CFF">Covid Vaccination Record System</h2>
-                      <p class="project-desc">The COVID Vaccination Record System is a comprehensive solution designed
-                        to manage and streamline the recording, tracking, and management of COVID-19 vaccination
-                        records. It features a user-friendly interface and secure data storage. </p>
-                      <div class="row">
-                        <div class="col-md-4">
-                          <p class="text-center">Front-end</p>
-                          <i class="hgi-stroke hgi-html-5" style="font-size:25px;"></i>
-                          <i class="hgi-stroke hgi-bootstrap" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
-                        </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Back-end</p>
-                          <i class="hgi-stroke hgi-api" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-java-script" style="font-size:25px"></i>
-                          <i class="hgi-stroke hgi-php" style="font-size:25px"></i>
-                        </div>
-                        <div class="col-md-4">
-                          <p class="text-center">Prototyping</p>
-                          <i class="hgi-stroke hgi-figma" style="font-size:25px"></i>
-                        </div>
-                      </div>
                     </div>
 
-                    <div class="col-lg-8">
-                      <div class="container">
-                        <div class="row">
-                          <img src="images/gif5.gif" data-aos="fade-down" data-aos-duration="2000"
-                            class="img-fluid rounded " alt="GIF2" loading="lazy">
+                    <!-- Project 2 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project4.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://tinyurl.com/mru8cn2m" target="_blank"
+                                        style="text-decoration:none;">
+                                        <h6 class="project-title">Social-Storytelling App</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">An intuitive Social-Storytelling UI design app for sharing
+                                    stories, connecting with others, and
+                                    discovering unique narratives.</span>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-              </section>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project1.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Budget App</h5>
-                <p class="card-text">
-                  This intuitive UI design showcase expense tracking, savings goals, and financial management
-                </p>
-                <a href="https://www.figma.com/proto/6bU7YqFvDjDopwyV9GqAMu?node-id=0-1&t=thrmcc1epzRVzwHn-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project2.png" class="card-img-top" alt="Palm Springs Road" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Task Manager App</h5>
-                <p class="card-text">
-                  This intuitive UI design showcase organizing tasks, setting priorities, and boosting productivity.
-                </p>
-                <a href="https://www.figma.com/proto/7kUj5eAcro18x54JPOwoXn?node-id=0-1&t=8jlXIingSKNWNCO1-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project3.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Music App</h5>
-                <p class="card-text">
-                  An intuitive Music app UI design for listening music, discovering, and organizing various playlists.
-                </p>
-                <a href="https://www.figma.com/proto/s50H9dglaaOWyesQh2TWxN?node-id=0-1&t=8jlXIingSKNWNCO1-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project4.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Social-Storytelling App</h5>
-                <p class="card-text">
-                  An intuitive Social-Storytelling UI design app for sharing stories, connecting with others, and
-                  discovering unique narratives.
-                </p>
-                <a href="https://tinyurl.com/mru8cn2m" target="_blank"><button type="button"
-                    class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project5.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Programming Tutorial App</h5>
-                <p class="card-text">
-                  An intuitive Programming Tutorial UI design app to teach coding through hands-on lessons and
-                  challenges.
-                </p>
-                <a href="https://www.figma.com/proto/30ZCFB1vxvnKHV1n5UEf0p/Programming-App?node-id=1-2"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project6.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Anime Streaming Landing Page</h5>
-                <p class="card-text">
-                  An anime streaming platform UI design showcasing access to exclusive content and live streams.
-                </p>
-                <a href="https://www.figma.com/proto/cqOkzLdGbU22O7QazYNwsz?node-id=0-1&t=8jlXIingSKNWNCO1-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project7.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Clothing Store Landing Page</h5>
-                <p class="card-text">
-                  A sleek clothing store landing page UI design with an easy navigation, showcasing clothing products.
-                </p>
-                <a href="https://tinyurl.com/5fb97k88" target="_blank"><button type="button"
-                    class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project8.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Coffee Shop Landing Page</h5>
-                <p class="card-text">
-                  A cozy coffee shop landing page UI design, showcasing featured drinks and seamless order options.
-                </p>
-                <a href="https://www.figma.com/proto/WWJhimo3olql9VGKMe8dD1?node-id=0-1&t=scQcqzeQ9Dkfjik2-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project9.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">NFT Landing Page</h5>
-                <p class="card-text">
-                  A futuristic NFT landing page UI design with bold visuals, highlighting exclusive digital collections.
-                </p>
-                <a href="https://www.figma.com/proto/YB3z79HqCYLXAEflHihaLP?node-id=0-1&t=thrmcc1epzRVzwHn-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project10.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Shoes - Graphic Design</h5>
-                <p class="card-text">
-                  This graphic design features unique patterns, bold colors, and artistic elements, blending style with
-                  creativity.
-                </p>
-                <a href="https://www.figma.com/proto/WjltKxb1Fe3aQFiX4CKTp0?node-id=0-1&t=JtDF0VycLuIhE5mo-6"
-                  target="_blank"><button type="button" class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project11.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Album Cover - Graphic Design</h5>
-                <p class="card-text">
-                  This graphic design showcases three different album covers, each features distinct visual elements
-                  that represent the artists' albums
-                </p>
-                <a href="https://tinyurl.com/ym5pxhah" target="_blank"><button type="button"
-                    class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col">
-            <div class="card-projects2 h-100" data-aos="zoom-in" data-aos-duration="2000">
-              <img src="images/project12.png" class="card-img-top" alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title" style="color:#F2AA4CFF">Dashboard UI Design</h5>
-                <p class="card-text">
-                  This UI design is has administrative or managerial purposes, such as tracking tasks, analytics, or workflows for a company.
-                </p>
-                <a href="https://tinyurl.com/4vcubcuu" target="_blank"><button type="button"
-                    class="btn btn-outline-warning btn-sm">Preview</button></a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
+                    <!-- Project 2 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project5.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/30ZCFB1vxvnKHV1n5UEf0p/Programming-App?node-id=1-2"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Programming Tutorial App</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter"> An intuitive Programming Tutorial UI design app to teach coding
+                                    through hands-on lessons and challenges.</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Project 2 (visible by default) -->
+                    <div class="col">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project6.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/cqOkzLdGbU22O7QazYNwsz?node-id=0-1&t=8jlXIingSKNWNCO1-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Anime Streaming Landing Page</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">An anime streaming platform UI design showcasing access to
+                                    exclusive content and live streams.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projects 3-6 (visible by default) -->
+                    <!-- ... duplicate structure for projects 3-6 ... -->
 
-    <section id="certification">
-      <div class="photo-gallery">
-        <div class="container container-fluid" data-aos="fade-up" data-aos-duration="2000">
-          <div class="intro">
-            <h2 class="text-center" style="color:#F2AA4CFF">My Certificates</h2>
-            <p class="desc-cert">I have acquired various certificates that showcase my experience and commitment to
-              continuous learning and professional growth. Below is a collection of my most significant certifications.
-            </p>
-          </div>
-          <div class="row cert-photos">
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert1" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert1.jpg" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert1.jpg" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert2" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert2.jpg" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert2.jpg" alt="Building" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert3" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert3.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert3.png" alt="Loft" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert4" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert4.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert4.png" alt="Building" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert5" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert5.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert5.png" alt="Loft" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert6" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert6.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert6.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert7" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert7.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert7.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert8" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert8.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert8.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert9" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert9.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert9.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert10" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert10.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert10.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert11" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert11.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert11.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item cert12" data-aos="zoom-in" data-aos-duration="2000">
-              <a href="images/cert12.png" data-fancybox="gallery">
-                <img class="img-fluid shadow rounded" src="images/cert12.png" alt="Desk" loading="lazy">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <!-- Projects 7+ (hidden by default) -->
+                    <div class="col more-projects" style="display: none;">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project7.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://tinyurl.com/5fb97k88" target="_blank"
+                                        style="text-decoration:none;">
+                                        <h6 class="project-title">Clothing Store Landing Page</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">A sleek clothing store landing page UI design with an easy
+                                    navigation, showcasing clothing products.</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="contact">
-      <div class="container container-fluid container-contact">
-        <div class="row">
-          <div class="col-md-6 mr-auto" data-aos="fade-right" data-aos-duration="2000">
-            <h1 class="fw-bold" style="color:#F2AA4CFF">Chester Fred Jalalon</h1>
-            <p>UI/UX Designer • IT Support</p>
-            <p class="mb-5">Whether you have a question, want to collaborate on a project, or just want to say hi, feel
-              free to reach out. I'm always open to new opportunities and connections.</p>
+                    <div class="col more-projects" style="display: none;">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project8.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/WWJhimo3olql9VGKMe8dD1?node-id=0-1&t=scQcqzeQ9Dkfjik2-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Coffee Shop Landing Page</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">A cozy coffee shop landing page UI design, showcasing featured
+                                    drinks and seamless order options.</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="contact-container">
-              <ul class="list-unstyled mb-5">
-                <li class="contact-info">
-                  <i class="fa-solid fa-map"></i>
-                  <span>Tipolo, Mandaue City, Cebu, Philippines</span>
-                </li>
-                <li class="contact-info">
-                  <i class="fa-solid fa-phone"></i>
-                  <span>+63 961 688 0029</span>
-                </li>
-                <li class="contact-info">
-                  <i class="fas fa-envelope"></i>
-                  <span>chesterfredjalalon@gmail.com</span>
-                </li>
-              </ul>
+                    <div class="col more-projects" style="display: none;">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project9.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/YB3z79HqCYLXAEflHihaLP?node-id=0-1&t=thrmcc1epzRVzwHn-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">NFT Landing Page</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">A futuristic NFT landing page UI design with bold visuals,
+                                    highlighting exclusive digital collections.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col more-projects" style="display: none;">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project10.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/WjltKxb1Fe3aQFiX4CKTp0?node-id=0-1&t=JtDF0VycLuIhE5mo-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Shoes - Grahic Design</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">This graphic design features unique patterns, bold colors, and
+                                    artistic elements, blending style with creativity.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col more-projects" style="display: none;">
+                        <div class="card mt-3" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-img">
+                                <img src="images/project11.png" alt="Project image" class="card-imgs pv">
+                            </div>
+                            <div class="project-info">
+                                <div class="flex">
+                                    <a href="https://www.figma.com/proto/WjltKxb1Fe3aQFiX4CKTp0?node-id=0-1&t=JtDF0VycLuIhE5mo-6"
+                                        target="_blank" style="text-decoration:none;">
+                                        <h6 class="project-title">Album Cover - Grahic Design</h6>
+                                    </a>
+                                </div>
+                                <span class="lighter">This graphic design showcases three different album covers, each
+                                    features distinct visual elements that represent the artists' albums</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More projects... -->
+                    <div class="col more-projects" style="display: none;">
+                        <!-- Project content -->
+                    </div>
+
+                    <!-- Continue with remaining projects -->
+                </div>
+
+                <!-- Show More Button (only shown if there are hidden projects) -->
+                <div class="text-center mt-5" id="show-more-container" style="display: none;">
+                    <button id="show-more-btn" class="btn btn-outline-warning">Show More Projects</button>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 mx-auto" data-aos="fade-up" data-aos-duration="2000">
-            <form id="contact-form">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Your Name"
-                  required>
-                <label for="floatingInput">Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="user_email" name="user_email"
-                  placeholder="name@example.com" required>
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message"
-                  style="height: 200px" required></textarea>
-                <label for="floatingTextarea2">Message</label>
-              </div>
-              <button type="submit" class="btn btn-outline-warning mt-3">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <!-- Copyright - Bootstrap Brain Component -->
-      <div class="py-5 py-xl-8 py-xxl-9">
-        <hr class="mb-5">
-        <div class="container overflow-hidden">
-          <div class="row gy-5 gy-md-0 align-items-md-center">
-            <div class="col-xs-12 col-md-7 order-1 order-md-0">
-              <div class="copyright text-center text-md-start">
-                &copy; <span id="year"></span>. All Rights Reserved.
-              </div>
-              <script>
-                // JavaScript to dynamically update the year
-                const currentYear = new Date().getFullYear();
-                document.getElementById('year').textContent = currentYear;
-              </script>
-              <div class="credits text-secondary text-center text-md-start mt-2 fs-8">
-                CHESTER FRED JALALON
-              </div>
+        </section>
+
+        <section id="certification">
+            <div class="photo-gallery">
+                <div class="container container-fluid" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="intro text-center">
+                        <h2 style="color:#F2AA4CFF">My Certificates</h2>
+                        <p class="desc-cert">I have acquired various certificates that showcase my experience and
+                            commitment to continuous learning and professional growth.
+                        </p>
+                    </div>
+                    <div class="row cert-photos">
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert1" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert1.jpg" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert1.jpg" alt="Desk"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert2" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert2.jpg" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert2.jpg" alt="Building"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert3" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert3.png" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert3.png" alt="Loft"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert4" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert4.png" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert4.png" alt="Building"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert5" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert5.png" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert5.png" alt="Loft"
+                                    loading="lazy">
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert6" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert6.png" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert6.png" alt="Desk"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert10" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/udemy.jpg" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/udemy.jpg" alt="Desk"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item cert12" data-aos="zoom-in" data-aos-duration="2000">
+                            <a href="images/cert11.jpg" data-fancybox="gallery">
+                                <img class="img-fluid shadow rounded cert-img" src="images/cert11.jpg" alt="Desk"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="col-xs-12 col-md-5 order-0 order-md-1">
-              <div class="social-media-wrapper">
-                <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
-                  <li class="me-3">
-                    <a href="https://tinyurl.com/mt3dpc9u" class="link-dark link-opacity-75-hover" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                        <path fill="#f2aa4cff"
-                          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="me-3">
-                    <a href="https://tinyurl.com/m5bzaxxp" class="link-dark link-opacity-75-hover" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                        <g fill="none" stroke="#f2aa4cff" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="1.5" color="#f2aa4cff">
-                          <path
-                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                          <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="">
-                    <a href="https://tinyurl.com/mrxweux3" class="link-dark link-opacity-75-hover" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                        <path fill="#f2aa4cff"
-                          d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        <section id="contact">
+            <div class="container container-fluid container-contact">
+                <div class="row">
+                    <div class="col-md-6 mr-auto all-text" data-aos="fade-right" data-aos-duration="2000">
+                        <h1 class="fw-bold name-title" style="color:#F2AA4CFF">Chester Fred Jalalon</h1>
+                        <p class="contact-position">UI/UX Designer • IT Support</p>
+                        <p class="mb-5 contact-desc">Whether you have a question, want to collaborate on a project, or just want to
+                            say hi, feel
+                            free to reach out. I'm always open to new opportunities and connections.</p>
+
+                        <div class="contact-container">
+                            <ul class="list-unstyled mb-5">
+                                <li class="contact-info">
+                                    <i class="fa-solid fa-map"></i>
+                                    <span>Tipolo, Mandaue City, Cebu, Philippines</span>
+                                </li>
+                                <li class="contact-info">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>+63 961 688 0029</span>
+                                </li>
+                                <li class="contact-info">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>chesterfredjalalon@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mx-auto" data-aos="fade-up" data-aos-duration="2000">
+                        <form id="contact-form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="user_name" name="user_name"
+                                    placeholder="Your Name" required>
+                                <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="user_email" name="user_email"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="message"
+                                    name="message" style="height: 150px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                            <button type="submit" class="btn btn-outline-warning mt-3 button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+        </section>
 
-    </footer>
-  </main>
+        <footer>
+            <!-- Copyright - Bootstrap Brain Component -->
+            <div class="py-5 py-xl-8 py-xxl-9">
+                <hr class="mb-5">
+                <div class="container overflow-hidden">
+                    <div class="row gy-5 gy-md-0 align-items-md-center">
+                        <div class="col-xs-12 col-md-7 order-1 order-md-0">
+                            <div class="copyright text-center text-md-start">
+                                &copy; <span id="year"></span>. All Rights Reserved.
+                            </div>
+                            <script>
+                                // JavaScript to dynamically update the year
+                                const currentYear = new Date().getFullYear();
+                                document.getElementById('year').textContent = currentYear;
+                            </script>
+                            <div class="credits text-secondary text-center text-md-start mt-2 fs-8">
+                                CHESTER FRED JALALON
+                            </div>
+                        </div>
 
+                        <div class="col-xs-12 col-md-5 order-0 order-md-1">
+                            <div class="social-media-wrapper">
+                                <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-md-end">
+                                    <li class="me-3">
+                                        <a href="https://tinyurl.com/mt3dpc9u" class="link-dark link-opacity-75-hover"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#f2aa4cff"
+                                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="me-3">
+                                        <a href="https://tinyurl.com/m5bzaxxp" class="link-dark link-opacity-75-hover"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                                viewBox="0 0 24 24">
+                                                <g fill="none" stroke="#f2aa4cff" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="1.5" color="#f2aa4cff">
+                                                    <path
+                                                        d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                                    <path
+                                                        d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://tinyurl.com/mrxweux3" class="link-dark link-opacity-75-hover"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#f2aa4cff"
+                                                    d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.all.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("03zEKda6Qgc_EE4Yd");
+        })();
 
-  <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-  <script>
-    (function () {
-      emailjs.init("03zEKda6Qgc_EE4Yd");
-    })();
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
+            emailjs.sendForm('service_bp3k528', 'template_r00lvrh', this)
+                .then(function () {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent.',
+                        text: 'Your message has been sent successfully.',
+                        confirmButtonColor: '#F2AA4C'
+                    });
 
-      emailjs.sendForm('service_bp3k528', 'template_r00lvrh', this)
-        .then(function () {
-          Swal.fire({
-            icon: 'success',
-            title: 'Message Sent.',
-            text: 'Your message has been sent successfully.',
-            confirmButtonColor: '#F2AA4C'
-          });
-
-          document.getElementById('contact-form').reset()
-        }, function (error) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Failed to send message.',
-            text: 'There was an issue sending your message. Please try again later.',
-            confirmButtonColor: '#F2AA4C'
-          });
+                    document.getElementById('contact-form').reset()
+                }, function (error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Failed to send message.',
+                        text: 'There was an issue sending your message. Please try again later.',
+                        confirmButtonColor: '#F2AA4C'
+                    });
+                });
         });
-    });
-  </script>
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+
 </body>
 
 </html>
