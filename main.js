@@ -50,60 +50,87 @@ document.addEventListener("DOMContentLoaded", () => {
 const copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const projectsContainer = document.getElementById("projects-container");
+  const showMoreBtn = document.getElementById("show-more-btn");
+  const showMoreContainer = document.getElementById("show-more-container");
+  const moreProjects = document.querySelectorAll(".more-projects");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const projectsContainer = document.getElementById('projects-container');
-  const showMoreBtn = document.getElementById('show-more-btn');
-  const showMoreContainer = document.getElementById('show-more-container');
-  const moreProjects = document.querySelectorAll('.more-projects');
-  
   // Only show button if there are hidden projects
   if (moreProjects.length > 0) {
-      showMoreContainer.style.display = 'block';
+    showMoreContainer.style.display = "block";
   }
-  
-  showMoreBtn.addEventListener('click', function() {
-      // Toggle all hidden projects
-      moreProjects.forEach(project => {
-          if (project.style.display === 'none') {
-              project.style.display = 'block';
-              showMoreBtn.textContent = 'Show Less';
-          } else {
-              project.style.display = 'none';
-              showMoreBtn.textContent = 'Show More Projects';
-          }
-      });
-      
-      // Scroll to maintain position (optional)
-      projectsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  showMoreBtn.addEventListener("click", function () {
+    // Toggle all hidden projects
+    moreProjects.forEach((project) => {
+      if (project.style.display === "none") {
+        project.style.display = "block";
+        showMoreBtn.textContent = "Show Less";
+      } else {
+        project.style.display = "none";
+        showMoreBtn.textContent = "Show More Projects";
+      }
+    });
+
+    // Scroll to maintain position (optional)
+    projectsContainer.scrollIntoView({ behavior: "smooth", block: "nearest" });
   });
 });
 
-
 // JavaScript for hide on scroll down, show on scroll up
 let lastScroll = 0;
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector("nav");
 const navbarHeight = navbar.offsetHeight;
 
 // Add some space at the top of the page equal to navbar height
 document.body.style.paddingTop = `${navbarHeight}px`;
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-        // At top of page - always show navbar
-        navbar.classList.remove('hidden');
-        return;
-    }
-    
-    if (currentScroll > lastScroll) {
-        // Scrolling down - hide navbar
-        navbar.classList.add('hidden');
-    } else {
-        // Scrolling up - show navbar
-        navbar.classList.remove('hidden');
-    }
-    
-    lastScroll = currentScroll;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    // At top of page - always show navbar
+    navbar.classList.remove("hidden");
+    return;
+  }
+
+  if (currentScroll > lastScroll) {
+    // Scrolling down - hide navbar
+    navbar.classList.add("hidden");
+  } else {
+    // Scrolling up - show navbar
+    navbar.classList.remove("hidden");
+  }
+
+  lastScroll = currentScroll;
 });
+
+document
+  .querySelectorAll(
+    ".project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8, .project-9, .project-10, .project-11, .project-12"
+  )
+  .forEach((card) => {
+    const img = card.querySelector(".hover-gif");
+    const staticSrc = img.getAttribute("data-static");
+    const gifSrc = img.getAttribute("data-gif");
+
+    // Apply transition style
+    img.style.transition = "opacity 0.5s ease-in-out";
+
+    card.addEventListener("mouseenter", () => {
+      img.style.opacity = "0";
+      setTimeout(() => {
+        img.src = gifSrc;
+        img.style.opacity = "1";
+      }, 200); // Wait for fade-out before switching
+    });
+
+    card.addEventListener("mouseleave", () => {
+      img.style.opacity = "0";
+      setTimeout(() => {
+        img.src = staticSrc;
+        img.style.opacity = "1";
+      }, 200);
+    });
+  });
