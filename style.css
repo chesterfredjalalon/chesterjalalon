@@ -707,15 +707,6 @@ i {
   border-radius: 50rem !important;
 }
 
-.indented-list {
-  list-style-type: disc;
-  padding-left: 1.5em;
-}
-
-.indented-list li {
-  text-indent: -0.1em;
-  padding-left: 0.1em;
-}
 
 /*===============================WORK=================================*/
 
