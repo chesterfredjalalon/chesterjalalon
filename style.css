@@ -706,6 +706,17 @@ i {
 .rounded-pill {
   border-radius: 50rem !important;
 }
+
+.indented-list {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.indented-list li {
+  text-indent: -0.5em;
+  padding-left: 0.5em;
+}
+
 /*===============================WORK=================================*/
 
 
