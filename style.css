@@ -713,8 +713,8 @@ i {
 }
 
 .indented-list li {
-  text-indent: -0.5em;
-  padding-left: 0.5em;
+  text-indent: -0.1em;
+  padding-left: 0.1em;
 }
 
 /*===============================WORK=================================*/
